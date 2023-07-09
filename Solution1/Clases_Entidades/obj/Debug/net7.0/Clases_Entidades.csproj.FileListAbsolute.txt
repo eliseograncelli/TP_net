@@ -1,0 +1,5 @@
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Clases_Entidades\obj\Debug\net7.0\Clases_Entidades.csproj.AssemblyReference.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Clases_Entidades\obj\Debug\net7.0\Clases_Entidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Clases_Entidades\obj\Debug\net7.0\Clases_Entidades.AssemblyInfoInputs.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Clases_Entidades\obj\Debug\net7.0\Clases_Entidades.AssemblyInfo.cs
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Clases_Entidades\obj\Debug\net7.0\Clases_Entidades.csproj.CoreCompileInputs.cache
