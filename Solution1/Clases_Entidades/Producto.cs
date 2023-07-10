@@ -18,12 +18,12 @@ namespace Clases_Entidades
         public byte[] Foto { get; set; }
 
 
-        public Producto(string nombre, string descripcion, byte[] foto)
+        public Producto()//string nombre, string descripcion, byte[] foto)
         {
             this.Id = ultimoID++;
-            this.Nombre = nombre;
+            /*this.Nombre = nombre;
             this.Descripcion = descripcion;
-            this.Foto = foto;
+            this.Foto = foto;*/
         }
     }
 } 

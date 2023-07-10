@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases_Entidades", "Clases_Entidades\Clases_Entidades.csproj", "{1D7F4F0A-79BD-4D2E-B097-D644858F3F5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Clases_Entidades\Entidades.csproj", "{1D7F4F0A-79BD-4D2E-B097-D644858F3F5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consola", "Consola\Consola.csproj", "{2D1F82E1-07E8-4795-B9A3-E079983BF349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formulario", "Formulario\Formulario.csproj", "{2A8DAD2D-C57D-4C6E-AFD8-7609A4001B65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{1D7F4F0A-79BD-4D2E-B097-D644858F3F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D7F4F0A-79BD-4D2E-B097-D644858F3F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D7F4F0A-79BD-4D2E-B097-D644858F3F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1F82E1-07E8-4795-B9A3-E079983BF349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1F82E1-07E8-4795-B9A3-E079983BF349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1F82E1-07E8-4795-B9A3-E079983BF349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1F82E1-07E8-4795-B9A3-E079983BF349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A8DAD2D-C57D-4C6E-AFD8-7609A4001B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8DAD2D-C57D-4C6E-AFD8-7609A4001B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8DAD2D-C57D-4C6E-AFD8-7609A4001B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8DAD2D-C57D-4C6E-AFD8-7609A4001B65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
