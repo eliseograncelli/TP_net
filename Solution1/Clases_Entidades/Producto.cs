@@ -20,7 +20,8 @@ namespace Clases_Entidades
 
         public Producto()//string nombre, string descripcion, byte[] foto)
         {
-            this.Id = ultimoID++;
+            ultimoID = ultimoID++;
+            this.Id = ultimoID;
             /*this.Nombre = nombre;
             this.Descripcion = descripcion;
             this.Foto = foto;*/

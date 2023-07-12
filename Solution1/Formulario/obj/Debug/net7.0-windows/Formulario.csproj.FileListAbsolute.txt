@@ -1,0 +1,17 @@
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\bin\Debug\net7.0-windows\Formulario.exe
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\bin\Debug\net7.0-windows\Formulario.deps.json
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\bin\Debug\net7.0-windows\Formulario.runtimeconfig.json
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\bin\Debug\net7.0-windows\Formulario.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\bin\Debug\net7.0-windows\Formulario.pdb
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\Formulario.csproj.AssemblyReference.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\Formulario.Form1.resources
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\Formulario.csproj.GenerateResource.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\Formulario.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\Formulario.AssemblyInfoInputs.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\Formulario.AssemblyInfo.cs
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\Formulario.csproj.CoreCompileInputs.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\Formulario.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\refint\Formulario.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\Formulario.pdb
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\Formulario.genruntimeconfig.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\Solution1\Formulario\obj\Debug\net7.0-windows\ref\Formulario.dll
