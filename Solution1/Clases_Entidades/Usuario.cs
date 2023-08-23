@@ -55,22 +55,25 @@ namespace Entidades
                     while (ok == 1)
                     {
 
-                        Console.Write("Ingrese dni: "); int d = Convert.ToInt32(Console.ReadLine());
-                        var us = BuscadorPorDNI(d, usuarios);
-                        if (us == null)
-                        {
-                            Console.Write("Ingrese nombre: "); string nom = Console.ReadLine();
-                            Console.Write("Ingrese apellido: "); string ape = Console.ReadLine();
-                            Console.Write("Ingrese email: "); string email = Console.ReadLine();
-                            Usuario u = new Usuario(d, nom, ape, email);
-                            usuarios.Add(u);
-                            Console.WriteLine("Usuario n° {0}, creado exitosamente", u.Id);
-                        }
-                        else
-                        {
-                            Console.WriteLine("El dni ingresado ya corresponde a un usuario registrado");
-                        }
+                        /*  Console.Write("Ingrese dni: "); int d = Convert.ToInt32(Console.ReadLine());
+                          var us = BuscadorPorDNI(d, usuarios);
+                          if (us == null)
+                          {
+                              Console.Write("Ingrese nombre: "); string nom = Console.ReadLine();
+                              Console.Write("Ingrese apellido: "); string ape = Console.ReadLine();
+                              Console.Write("Ingrese email: "); string email = Console.ReadLine();
+                              Usuario u = new Usuario(d, nom, ape, email);
+                              usuarios.Add(u);
+                              Console.WriteLine("Usuario n° {0}, creado exitosamente", u.Id);
+                          }
+                          else
+                          {
+                              Console.WriteLine("El dni ingresado ya corresponde a un usuario registrado");
+                          }
 
+                          Console.Write("¿Desea ingresar otro usuario?\n1:Si - 2:No -> "); ok = Convert.ToInt16(Console.ReadLine()); */
+                        //ALTAAAAAAAAAAAAAAAa
+                        alta(usuarios);
                         Console.Write("¿Desea ingresar otro usuario?\n1:Si - 2:No -> "); ok = Convert.ToInt16(Console.ReadLine());
                     }
                     break;
@@ -148,7 +151,26 @@ Usuario BuscadorPorDNI(int d, List<Usuario> usuarios)   // Buscador de usuarios 
         }
     }
     return null; ;
-} 
+}
+        
+        public void alta(List<Usuario> usuarios)
+        {
+            Console.Write("Ingrese dni: "); int d = Convert.ToInt32(Console.ReadLine());
+            var us = BuscadorPorDNI(d, usuarios);
+            if (us == null)
+            {
+                Console.Write("Ingrese nombre: "); string nom = Console.ReadLine();
+                Console.Write("Ingrese apellido: "); string ape = Console.ReadLine();
+                Console.Write("Ingrese email: "); string email = Console.ReadLine();
+                Usuario u = new Usuario(d, nom, ape, email);
+                usuarios.Add(u);
+                Console.WriteLine("Usuario n° {0}, creado exitosamente", u.Id);
+            }
+            else
+            {
+                Console.WriteLine("El dni ingresado ya corresponde a un usuario registrado");
+            }
+        }
 
 
 

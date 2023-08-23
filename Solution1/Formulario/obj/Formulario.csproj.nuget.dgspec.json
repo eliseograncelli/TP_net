@@ -4,6 +4,61 @@
     "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\Solution1\\Formulario\\Formulario.csproj": {}
   },
   "projects": {
+    "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\Solution1\\Clases_Entidades\\Entidades.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\Solution1\\Clases_Entidades\\Entidades.csproj",
+        "projectName": "Entidades",
+        "projectPath": "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\Solution1\\Clases_Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\Solution1\\Clases_Entidades\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\Solution1\\Formulario\\Formulario.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +82,11 @@
         "frameworks": {
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\Solution1\\Clases_Entidades\\Entidades.csproj": {
+                "projectPath": "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\Solution1\\Clases_Entidades\\Entidades.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

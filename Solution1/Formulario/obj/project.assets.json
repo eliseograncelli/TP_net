@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0-windows7.0": {}
+    "net7.0-windows7.0": {
+      "Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entidades.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Entidades/1.0.0": {
+      "type": "project",
+      "path": "../Clases_Entidades/Entidades.csproj",
+      "msbuildProject": "../Clases_Entidades/Entidades.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0-windows7.0": []
+    "net7.0-windows7.0": [
+      "Entidades >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Usuario\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\Solution1\\Clases_Entidades\\Entidades.csproj": {
+              "projectPath": "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\Solution1\\Clases_Entidades\\Entidades.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

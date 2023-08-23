@@ -6,33 +6,8 @@ using System.Timers;
 int op;
 bool sigue = true;
 var usuarios = new List<Usuario>();
-//int ok = 1;
-
-/*while (sigue)         VIEJO. ANDA
-{
-    Console.WriteLine("MENU");
-    Console.WriteLine("1- ABM DE PRODUCTO\n" +
-        "2- ABM DE USUARIO\n" +
-        "0- SALIR");
-
-    Console.WriteLine("\n¿Que desea realizar? "); op = Convert.ToInt16(Console.ReadLine());
-    switch (op)
-    {
-           case 0: Console.WriteLine("Fin programa");
-            sigue = false;
-                break;
-           case 1: Console.WriteLine("ABM PRODUCTO en construccion\n\n----------------------------------------\n");
-                break;
-            case 2: 
-            ABMUsuarios();
-            Console.WriteLine("\n\n----------------------------------------\n");
-                break;
-    }
-   
-}*/
 
 
-// A PARTIR DE ACA ES EL NUEVO
 var user = new Usuario();   // AGREGO VARIABLE USER
 while (sigue) 
 {
