@@ -42,6 +42,8 @@
             btnCancelar = new Button();
             dgvEmpleados = new DataGridView();
             txtId = new Label();
+            txtDNI = new TextBox();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)picFoto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvEmpleados).BeginInit();
             SuspendLayout();
@@ -49,73 +51,82 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(181, 48);
+            label1.Location = new Point(127, 26);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(79, 25);
+            label1.Size = new Size(54, 15);
             label1.TabIndex = 0;
-            label1.Text = "nombre:";
+            label1.Text = "Nombre:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(351, 48);
+            label2.Location = new Point(289, 26);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(58, 25);
+            label2.Size = new Size(39, 15);
             label2.TabIndex = 1;
             label2.Text = "Email:";
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(181, 76);
+            txtNombre.Location = new Point(127, 43);
+            txtNombre.Margin = new Padding(2, 2, 2, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(149, 31);
+            txtNombre.Size = new Size(158, 23);
             txtNombre.TabIndex = 2;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(351, 76);
+            txtEmail.Location = new Point(289, 43);
+            txtEmail.Margin = new Padding(2, 2, 2, 2);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(364, 31);
+            txtEmail.Size = new Size(256, 23);
             txtEmail.TabIndex = 3;
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(181, 148);
+            txtPass.Location = new Point(289, 85);
+            txtPass.Margin = new Padding(2, 2, 2, 2);
             txtPass.Name = "txtPass";
-            txtPass.Size = new Size(243, 31);
+            txtPass.Size = new Size(256, 23);
             txtPass.TabIndex = 4;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(181, 120);
+            label3.Location = new Point(289, 68);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(91, 25);
+            label3.Size = new Size(60, 15);
             label3.TabIndex = 5;
             label3.Text = "Password:";
             // 
             // picFoto
             // 
-            picFoto.Location = new Point(22, 27);
+            picFoto.Location = new Point(15, 16);
+            picFoto.Margin = new Padding(2, 2, 2, 2);
             picFoto.Name = "picFoto";
-            picFoto.Size = new Size(141, 153);
+            picFoto.Size = new Size(99, 92);
             picFoto.TabIndex = 6;
             picFoto.TabStop = false;
             // 
             // btnExaminar
             // 
-            btnExaminar.Location = new Point(23, 199);
+            btnExaminar.Location = new Point(16, 119);
+            btnExaminar.Margin = new Padding(2, 2, 2, 2);
             btnExaminar.Name = "btnExaminar";
-            btnExaminar.Size = new Size(142, 44);
+            btnExaminar.Size = new Size(99, 26);
             btnExaminar.TabIndex = 7;
             btnExaminar.Text = "Examinar";
             btnExaminar.UseVisualStyleBackColor = true;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(267, 199);
+            btnAgregar.Location = new Point(187, 119);
+            btnAgregar.Margin = new Padding(2, 2, 2, 2);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(97, 44);
+            btnAgregar.Size = new Size(68, 26);
             btnAgregar.TabIndex = 8;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -123,9 +134,10 @@
             // 
             // btnModificar
             // 
-            btnModificar.Location = new Point(370, 199);
+            btnModificar.Location = new Point(259, 119);
+            btnModificar.Margin = new Padding(2, 2, 2, 2);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(96, 44);
+            btnModificar.Size = new Size(67, 26);
             btnModificar.TabIndex = 9;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
@@ -133,9 +145,10 @@
             // 
             // btnBorrar
             // 
-            btnBorrar.Location = new Point(472, 199);
+            btnBorrar.Location = new Point(330, 119);
+            btnBorrar.Margin = new Padding(2, 2, 2, 2);
             btnBorrar.Name = "btnBorrar";
-            btnBorrar.Size = new Size(95, 44);
+            btnBorrar.Size = new Size(66, 26);
             btnBorrar.TabIndex = 10;
             btnBorrar.Text = "Borrar";
             btnBorrar.UseVisualStyleBackColor = true;
@@ -143,9 +156,10 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(622, 199);
+            btnCancelar.Location = new Point(435, 119);
+            btnCancelar.Margin = new Padding(2, 2, 2, 2);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(142, 44);
+            btnCancelar.Size = new Size(99, 26);
             btnCancelar.TabIndex = 11;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -153,26 +167,46 @@
             // dgvEmpleados
             // 
             dgvEmpleados.ColumnHeadersHeight = 34;
-            dgvEmpleados.Location = new Point(24, 258);
+            dgvEmpleados.Location = new Point(17, 155);
+            dgvEmpleados.Margin = new Padding(2, 2, 2, 2);
             dgvEmpleados.Name = "dgvEmpleados";
             dgvEmpleados.RowHeadersWidth = 62;
-            dgvEmpleados.Size = new Size(964, 175);
+            dgvEmpleados.Size = new Size(675, 164);
             dgvEmpleados.TabIndex = 0;
             dgvEmpleados.CellMouseClick += Seleccionar;
             // 
             // txtId
             // 
             txtId.AutoSize = true;
-            txtId.Location = new Point(181, 12);
+            txtId.Location = new Point(127, 7);
+            txtId.Margin = new Padding(2, 0, 2, 0);
             txtId.Name = "txtId";
-            txtId.Size = new Size(0, 25);
+            txtId.Size = new Size(0, 15);
             txtId.TabIndex = 12;
+            // 
+            // txtDNI
+            // 
+            txtDNI.Location = new Point(127, 85);
+            txtDNI.Name = "txtDNI";
+            txtDNI.Size = new Size(158, 23);
+            txtDNI.TabIndex = 13;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(127, 71);
+            label4.Name = "label4";
+            label4.Size = new Size(30, 15);
+            label4.TabIndex = 14;
+            label4.Text = "DNI:";
             // 
             // frmEmpleados
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1013, 450);
+            ClientSize = new Size(709, 330);
+            Controls.Add(label4);
+            Controls.Add(txtDNI);
             Controls.Add(txtId);
             Controls.Add(dgvEmpleados);
             Controls.Add(btnCancelar);
@@ -187,6 +221,7 @@
             Controls.Add(txtNombre);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "frmEmpleados";
             Text = "frmEmpleados";
             ((System.ComponentModel.ISupportInitialize)picFoto).EndInit();
@@ -211,5 +246,7 @@
         private Button btnCancelar;
         private DataGridView dgvEmpleados;
         private Label txtId;
+        private TextBox txtDNI;
+        private Label label4;
     }
 }

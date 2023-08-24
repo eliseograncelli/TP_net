@@ -9,15 +9,16 @@ namespace AdministradorDeEmpleados.BLL
    class EmpleadosBLL
     {
         static int ID = 0;
-        public int id { set; get; }
-        public string nombre { get; set; }
-        public string email { get; set; }
-        public string password { get; set;}
-        public byte[] foto { get; set; }
-        public string tipo { get; set; }
+        public int Id { set; get; }
+        public int DNI { set; get; }
+        public string Nombre { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set;}
+        public byte[] Foto { get; set; }
+        public string Tipo { get; set; }
         public void setId()
         {
-            this.id = ++ID;
+            this.Id = ++ID;
         }
     }
 }

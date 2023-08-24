@@ -23,25 +23,26 @@ namespace AdministradorDeEmpleados.DAL
         public string Agregar(EmpleadosBLL oEmpleado)
         {
             return conexion.Pruebaconectar(
-                "INSERT INTO Empleado (nombre,email,password,tipo) " +
-                "VALUES ('" + oEmpleado.nombre+"', '" + oEmpleado.email+"', '"+oEmpleado.password+"','"+oEmpleado.tipo+"');");
+                "INSERT INTO Empleado (nombre,email,password,tipo, dni) " +
+                "VALUES ('" + oEmpleado.Nombre+"', '" + oEmpleado.Email+"', '"+oEmpleado.Password+"','"+oEmpleado.Tipo+"', '"+oEmpleado.DNI+"' );");
         }
         public int Eliminar(EmpleadosBLL oEmpleado)
         {
-            MessageBox.Show("Se elimina el empleado: " +oEmpleado.nombre);
+            MessageBox.Show("Se elimina el empleado: " +oEmpleado.Nombre);
             conexion.Pruebaconectar(
-                "DELETE FROM Empleado WHERE nombre = '"+oEmpleado.nombre+ "'") ;
+                "DELETE FROM Empleado WHERE id = '"+oEmpleado.Id+ "'") ;
             return 1;
         }
         public int Modificar(EmpleadosBLL oEmpleado)
         {
-            string nuevoNombre = oEmpleado.nombre;
-            string nuevoEmail = oEmpleado.email;
-            string nuevaPassword = oEmpleado.password;
+            string nuevoNombre = oEmpleado.Nombre;
+            string nuevoEmail = oEmpleado.Email;
+            string nuevaPassword = oEmpleado.Password;
+           // int nuevodni = oEmpleado.DNI;
 
             conexion.Pruebaconectar(
                 "Update Empleado Set nombre='"
-                + nuevoNombre + "',email='"+nuevoEmail+"',password='"+nuevaPassword+"' Where id =" + oEmpleado.id);
+                + nuevoNombre +/*"',dni='" + nuevodni +*/ "',email='" +nuevoEmail+"',password='"+nuevaPassword+"' Where id =" + oEmpleado.Id);
             return 1;
         }
         public DataSet MostrarEmpleados()

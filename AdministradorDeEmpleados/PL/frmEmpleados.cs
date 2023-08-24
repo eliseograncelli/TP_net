@@ -33,21 +33,23 @@ namespace AdministradorDeEmpleados.PL
         private EmpleadosBLL RecuperarInformacion()
         {
             EmpleadosBLL oEmpleado = new EmpleadosBLL();
-            oEmpleado.nombre = txtNombre.Text;
-            oEmpleado.email = txtEmail.Text;
-            oEmpleado.password = txtPass.Text;
-            oEmpleado.tipo = "Cliente";
+            oEmpleado.Nombre = txtNombre.Text;
+            oEmpleado.DNI = int.Parse(txtDNI.Text);
+            oEmpleado.Email = txtEmail.Text;
+            oEmpleado.Password = txtPass.Text;
+            oEmpleado.Tipo = "Cliente";
             oEmpleado.setId();
             return oEmpleado;
         }
         private EmpleadosBLL RecuperarInformacionBM()
         {
             EmpleadosBLL oEmpleado = new EmpleadosBLL();
-            oEmpleado.nombre = txtNombre.Text;
-            oEmpleado.email = txtEmail.Text;
-            oEmpleado.password = txtPass.Text;
-            oEmpleado.tipo = "Cliente";
-            oEmpleado.id = int.Parse(txtId.Text);
+            oEmpleado.Nombre = txtNombre.Text;
+            oEmpleado.Email = txtEmail.Text;
+            oEmpleado.Password = txtPass.Text;
+            oEmpleado.Tipo = "Cliente";
+            oEmpleado.Id = int.Parse(txtId.Text);
+            oEmpleado.DNI = int.Parse(txtDNI.Text);
             return oEmpleado;
         }
 
@@ -58,6 +60,8 @@ namespace AdministradorDeEmpleados.PL
             txtEmail.Text = dgvEmpleados.Rows[indice].Cells[2].Value.ToString();
             txtPass.Text = dgvEmpleados.Rows[indice].Cells[4].Value.ToString();
             txtId.Text = dgvEmpleados.Rows[indice].Cells[0].Value.ToString();
+            txtDNI.Text = dgvEmpleados.Rows[indice].Cells[6].Value.ToString();
+
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)

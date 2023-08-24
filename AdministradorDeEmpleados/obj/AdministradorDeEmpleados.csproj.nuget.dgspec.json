@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\filip\\OneDrive\\Escritorio\\Curso\\.NET\\AdministradorDeEmpleados\\AdministradorDeEmpleados.csproj": {}
+    "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\TP_net\\AdministradorDeEmpleados\\AdministradorDeEmpleados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\filip\\OneDrive\\Escritorio\\Curso\\.NET\\AdministradorDeEmpleados\\AdministradorDeEmpleados.csproj": {
+    "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\TP_net\\AdministradorDeEmpleados\\AdministradorDeEmpleados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Escritorio\\Curso\\.NET\\AdministradorDeEmpleados\\AdministradorDeEmpleados.csproj",
+        "projectUniqueName": "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\TP_net\\AdministradorDeEmpleados\\AdministradorDeEmpleados.csproj",
         "projectName": "AdministradorDeEmpleados",
-        "projectPath": "C:\\Users\\filip\\OneDrive\\Escritorio\\Curso\\.NET\\AdministradorDeEmpleados\\AdministradorDeEmpleados.csproj",
-        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\filip\\OneDrive\\Escritorio\\Curso\\.NET\\AdministradorDeEmpleados\\obj\\",
+        "projectPath": "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\TP_net\\AdministradorDeEmpleados\\AdministradorDeEmpleados.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Usuario\\Desktop\\Facultad\\Electivas\\Tecnologias de desarrollo de software IDE (.net)\\TP\\TP_net\\AdministradorDeEmpleados\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

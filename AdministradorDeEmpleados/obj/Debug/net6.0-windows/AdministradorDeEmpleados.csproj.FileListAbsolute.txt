@@ -23,3 +23,28 @@ C:\Users\filip\OneDrive\Escritorio\Curso\.NET\AdministradorDeEmpleados\bin\Debug
 C:\Users\filip\OneDrive\Escritorio\Curso\.NET\AdministradorDeEmpleados\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\filip\OneDrive\Escritorio\Curso\.NET\AdministradorDeEmpleados\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\filip\OneDrive\Escritorio\Curso\.NET\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.csproj.CopyComplete
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\AdministradorDeEmpleados.exe
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\AdministradorDeEmpleados.deps.json
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\AdministradorDeEmpleados.runtimeconfig.json
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\AdministradorDeEmpleados.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\AdministradorDeEmpleados.pdb
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.csproj.AssemblyReference.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.Form1.resources
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.PL.frmEmpleados.resources
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.csproj.GenerateResource.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.AssemblyInfoInputs.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.AssemblyInfo.cs
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.csproj.CoreCompileInputs.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.csproj.CopyComplete
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\refint\AdministradorDeEmpleados.dll
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.pdb
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\AdministradorDeEmpleados.genruntimeconfig.cache
+D:\Users\Usuario\Desktop\Facultad\Electivas\Tecnologias de desarrollo de software IDE (.net)\TP\TP_net\AdministradorDeEmpleados\obj\Debug\net6.0-windows\ref\AdministradorDeEmpleados.dll

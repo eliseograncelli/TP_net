@@ -13,7 +13,8 @@ namespace AdministradorDeEmpleados.DAL
 {
     class ConexionDAL
     {
-        private string cadenaConexion = $"Data Source=PC-Fili; Initial Catalog=dbSistema; Integrated Security = True";
+        // private string cadenaConexion = $"Data Source=PC-Fili; Initial Catalog=dbSistema; Integrated Security =True";
+        private string cadenaConexion = $"Data Source=DESKTOP-JPRR102; Initial Catalog=dbSistema; Integrated Security =True";
         SqlConnection Conexion;
 
         public SqlConnection EstablecerConexion()
