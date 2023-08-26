@@ -50,5 +50,25 @@ namespace AdministradorDeEmpleados.DAL
             SqlCommand sentencia = new SqlCommand("SELECT * FROM Empleado");
             return conexion.EjecutarSentencia(sentencia);
         }
+
+        public DataSet BuscarEmp(string email, string contraseña)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                SqlCommand sentencia = new SqlCommand("SELECT * FROM Empleado WHERE email = '" + email + "' AND password = '" + contraseña + "'");
+                ds = conexion.EjecutarSentencia(sentencia);
+                if (ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                {
+                    ds = null;
+                }
+                return ds;
+            }
+            catch
+            {
+                MessageBox.Show("ERROR AL BUSCAR EMPLEADO");
+                return ds;
+            }
+        }
     }
 }

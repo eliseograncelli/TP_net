@@ -71,7 +71,7 @@
             // txtNombre
             // 
             txtNombre.Location = new Point(127, 43);
-            txtNombre.Margin = new Padding(2, 2, 2, 2);
+            txtNombre.Margin = new Padding(2);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(158, 23);
             txtNombre.TabIndex = 2;
@@ -79,7 +79,7 @@
             // txtEmail
             // 
             txtEmail.Location = new Point(289, 43);
-            txtEmail.Margin = new Padding(2, 2, 2, 2);
+            txtEmail.Margin = new Padding(2);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(256, 23);
             txtEmail.TabIndex = 3;
@@ -87,10 +87,10 @@
             // txtPass
             // 
             txtPass.Location = new Point(289, 85);
-            txtPass.Margin = new Padding(2, 2, 2, 2);
+            txtPass.Margin = new Padding(2);
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(256, 23);
-            txtPass.TabIndex = 4;
+            txtPass.TabIndex = 5;
             // 
             // label3
             // 
@@ -105,7 +105,7 @@
             // picFoto
             // 
             picFoto.Location = new Point(15, 16);
-            picFoto.Margin = new Padding(2, 2, 2, 2);
+            picFoto.Margin = new Padding(2);
             picFoto.Name = "picFoto";
             picFoto.Size = new Size(99, 92);
             picFoto.TabIndex = 6;
@@ -114,7 +114,7 @@
             // btnExaminar
             // 
             btnExaminar.Location = new Point(16, 119);
-            btnExaminar.Margin = new Padding(2, 2, 2, 2);
+            btnExaminar.Margin = new Padding(2);
             btnExaminar.Name = "btnExaminar";
             btnExaminar.Size = new Size(99, 26);
             btnExaminar.TabIndex = 7;
@@ -124,7 +124,7 @@
             // btnAgregar
             // 
             btnAgregar.Location = new Point(187, 119);
-            btnAgregar.Margin = new Padding(2, 2, 2, 2);
+            btnAgregar.Margin = new Padding(2);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(68, 26);
             btnAgregar.TabIndex = 8;
@@ -135,7 +135,7 @@
             // btnModificar
             // 
             btnModificar.Location = new Point(259, 119);
-            btnModificar.Margin = new Padding(2, 2, 2, 2);
+            btnModificar.Margin = new Padding(2);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(67, 26);
             btnModificar.TabIndex = 9;
@@ -146,7 +146,7 @@
             // btnBorrar
             // 
             btnBorrar.Location = new Point(330, 119);
-            btnBorrar.Margin = new Padding(2, 2, 2, 2);
+            btnBorrar.Margin = new Padding(2);
             btnBorrar.Name = "btnBorrar";
             btnBorrar.Size = new Size(66, 26);
             btnBorrar.TabIndex = 10;
@@ -157,7 +157,7 @@
             // btnCancelar
             // 
             btnCancelar.Location = new Point(435, 119);
-            btnCancelar.Margin = new Padding(2, 2, 2, 2);
+            btnCancelar.Margin = new Padding(2);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(99, 26);
             btnCancelar.TabIndex = 11;
@@ -168,7 +168,7 @@
             // 
             dgvEmpleados.ColumnHeadersHeight = 34;
             dgvEmpleados.Location = new Point(17, 155);
-            dgvEmpleados.Margin = new Padding(2, 2, 2, 2);
+            dgvEmpleados.Margin = new Padding(2);
             dgvEmpleados.Name = "dgvEmpleados";
             dgvEmpleados.RowHeadersWidth = 62;
             dgvEmpleados.Size = new Size(675, 164);
@@ -189,7 +189,7 @@
             txtDNI.Location = new Point(127, 85);
             txtDNI.Name = "txtDNI";
             txtDNI.Size = new Size(158, 23);
-            txtDNI.TabIndex = 13;
+            txtDNI.TabIndex = 4;
             // 
             // label4
             // 
@@ -221,9 +221,9 @@
             Controls.Add(txtNombre);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "frmEmpleados";
-            Text = "frmEmpleados";
+            Text = "frmClientes";
             ((System.ComponentModel.ISupportInitialize)picFoto).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvEmpleados).EndInit();
             ResumeLayout(false);
