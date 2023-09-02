@@ -21,13 +21,36 @@ namespace AdministradorDeEmpleados.PL
             oEmpleadoDAL = new EmpleadoDAL();
             InitializeComponent();
             dgvEmpleados.DataSource = oEmpleadoDAL.MostrarEmpleados().Tables[0];
+
+            btnModificar.Enabled = false;
+            btnBorrar.Enabled = false;
+            btnExaminar.Enabled = false;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            EmpleadosBLL nuevoEmpleado = RecuperarInformacion();
-            oEmpleadoDAL.Agregar(nuevoEmpleado);
-            dgvEmpleados.DataSource = oEmpleadoDAL.MostrarEmpleados().Tables[0];
+            try
+            {
+                if (txtDNI.Text != "" & txtNombre.Text != "" & txtEmail.Text != "" & txtPass.Text != "")
+                {
+                    EmpleadosBLL nuevoEmpleado = RecuperarInformacion();
+                    oEmpleadoDAL.Agregar(nuevoEmpleado);
+                    dgvEmpleados.DataSource = oEmpleadoDAL.MostrarEmpleados().Tables[0];
+                    LimpiaEntradas();
+                }
+                else
+                {
+                    MessageBox.Show("DEBE INGRESAR TODOS LOS DATOS");
+
+                }
+            }
+            catch
+            {
+                MessageBox.Show("NO SE PUDO GUARDAR");
+            }
+
+         
+
         }
 
         private EmpleadosBLL RecuperarInformacion()
@@ -62,18 +85,44 @@ namespace AdministradorDeEmpleados.PL
             txtId.Text = dgvEmpleados.Rows[indice].Cells[0].Value.ToString();
             txtDNI.Text = dgvEmpleados.Rows[indice].Cells[6].Value.ToString();
 
+            btnAgregar.Enabled = false;
+            btnBorrar.Enabled = true;
+            btnModificar.Enabled = true;
+            btnExaminar.Enabled = true;
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
             oEmpleadoDAL.Eliminar(RecuperarInformacionBM());
             dgvEmpleados.DataSource = oEmpleadoDAL.MostrarEmpleados().Tables[0];
+            LimpiaEntradas();
+
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
             oEmpleadoDAL.Modificar(RecuperarInformacionBM());
             dgvEmpleados.DataSource = oEmpleadoDAL.MostrarEmpleados().Tables[0];
+            LimpiaEntradas();
+
+        }
+
+        private void LimpiaEntradas()
+        {
+            txtNombre.Text = "";
+            txtDNI.Text = "";
+            txtEmail.Text = "";
+            txtId.Text = "";
+            txtPass.Text = "";
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiaEntradas();
+            btnAgregar.Enabled = true;
+            btnBorrar.Enabled = false;
+            btnModificar.Enabled = false;
+            btnExaminar.Enabled = false;
         }
     }
 }

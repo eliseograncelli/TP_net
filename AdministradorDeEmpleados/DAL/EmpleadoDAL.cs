@@ -22,13 +22,14 @@ namespace AdministradorDeEmpleados.DAL
 
         public string Agregar(EmpleadosBLL oEmpleado)
         {
+            MessageBox.Show("USUARIO " + oEmpleado.Nombre + " CREADO EXITOSAMENTE");
             return conexion.Pruebaconectar(
                 "INSERT INTO Empleado (nombre,email,password,tipo, dni) " +
                 "VALUES ('" + oEmpleado.Nombre+"', '" + oEmpleado.Email+"', '"+oEmpleado.Password+"','"+oEmpleado.Tipo+"', '"+oEmpleado.DNI+"' );");
         }
         public int Eliminar(EmpleadosBLL oEmpleado)
         {
-            MessageBox.Show("Se elimina el empleado: " +oEmpleado.Nombre);
+            MessageBox.Show("SE ELIMINA EL EMPLEADO: " +oEmpleado.Nombre);
             conexion.Pruebaconectar(
                 "DELETE FROM Empleado WHERE id = '"+oEmpleado.Id+ "'") ;
             return 1;
