@@ -24,14 +24,14 @@ namespace AdministradorDeEmpleados.DAL
         {
             MessageBox.Show("USUARIO " + oEmpleado.Nombre + " CREADO EXITOSAMENTE");
             return conexion.Pruebaconectar(
-                "INSERT INTO Empleado (nombre,email,password,tipo, dni) " +
-                "VALUES ('" + oEmpleado.Nombre+"', '" + oEmpleado.Email+"', '"+oEmpleado.Password+"','"+oEmpleado.Tipo+"', '"+oEmpleado.DNI+"' );");
+                "INSERT INTO Empleado (nombre,email,password,tipo, dni, estado) " +
+                "VALUES ('" + oEmpleado.Nombre + "', '" + oEmpleado.Email + "', '" + oEmpleado.Password + "','" + oEmpleado.Tipo + "', '" + oEmpleado.DNI + "', '" + oEmpleado.Estado + "' );");
         }
         public int Eliminar(EmpleadosBLL oEmpleado)
         {
-            MessageBox.Show("SE ELIMINA EL EMPLEADO: " +oEmpleado.Nombre);
+            MessageBox.Show("SE ELIMINA EL EMPLEADO: " + oEmpleado.Nombre);
             conexion.Pruebaconectar(
-                "DELETE FROM Empleado WHERE id = '"+oEmpleado.Id+ "'") ;
+                "DELETE FROM Empleado WHERE id = '" + oEmpleado.Id + "'");
             return 1;
         }
         public int Modificar(EmpleadosBLL oEmpleado)
@@ -39,11 +39,13 @@ namespace AdministradorDeEmpleados.DAL
             string nuevoNombre = oEmpleado.Nombre;
             string nuevoEmail = oEmpleado.Email;
             string nuevaPassword = oEmpleado.Password;
-           // int nuevodni = oEmpleado.DNI;
+            string nuevoEstado = oEmpleado.Estado;
+            string nuevoTipo = oEmpleado.Tipo;
+            // int nuevodni = oEmpleado.DNI;
 
             conexion.Pruebaconectar(
                 "Update Empleado Set nombre='"
-                + nuevoNombre +/*"',dni='" + nuevodni +*/ "',email='" +nuevoEmail+"',password='"+nuevaPassword+"' Where id =" + oEmpleado.Id);
+                + nuevoNombre +/*"',dni='" + nuevodni +*/ "',email='" + nuevoEmail + "',password='" + nuevaPassword + "', tipo= '" +nuevoTipo + "', estado= '" + nuevoEstado + "' Where id =" + oEmpleado.Id);
             return 1;
         }
         public DataSet MostrarEmpleados()
@@ -52,24 +54,60 @@ namespace AdministradorDeEmpleados.DAL
             return conexion.EjecutarSentencia(sentencia);
         }
 
-        public DataSet BuscarEmp(string email, string contraseña)
+        /*  public DataSet BuscarEmp(string email, string contraseña)   // ESTE ANDA PERO NO TAN BIEN
+          {
+              DataSet ds = new DataSet();
+              try
+              {
+                    SqlCommand sentencia = new SqlCommand("SELECT * FROM Empleado WHERE email = '" + email + "' AND password = '" + contraseña + "'");
+                  ds = conexion.EjecutarSentencia(sentencia);
+
+                    if (ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    {
+                        ds = null;
+                    }
+                  return ds;
+               } 
+
+              catch (Exception ex)
+              {
+                  {
+                      MessageBox.Show("ERROR AL BUSCAR EMPLEADO " + ex.Message);
+                      return ds;
+                  }
+              }
+          } */
+
+
+        public DataSet BuscarEmp(string email, string contraseña)   // NO FUNCIONA, REVISAR. LA IDEA ES QUE ME TRAIGA UN OBJETO TIPO USUARIO PARA VER SI ES ADMIN O EMPLEADO
         {
             DataSet ds = new DataSet();
+            ds = null;
+
             try
             {
-                SqlCommand sentencia = new SqlCommand("SELECT * FROM Empleado WHERE email = '" + email + "' AND password = '" + contraseña + "'");
-                ds = conexion.EjecutarSentencia(sentencia);
+                SqlCommand comando = new SqlCommand("SELECT * FROM Empleado WHERE email = '" + email + "' AND password = '" + contraseña + "'");
+                ds = conexion.EjecutarSentencia(comando);
+
+
                 if (ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
-                {
-                    ds = null;
-                }
+                    {
+                        ds = null;
+                        return ds;
+                    }
+
                 return ds;
+
+
+                
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("ERROR AL BUSCAR EMPLEADO");
+                MessageBox.Show("Error al buscar empleado: " + ex.Message);
                 return ds;
             }
         }
+
+
     }
 }

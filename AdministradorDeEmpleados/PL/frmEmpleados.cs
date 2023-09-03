@@ -49,8 +49,6 @@ namespace AdministradorDeEmpleados.PL
                 MessageBox.Show("NO SE PUDO GUARDAR");
             }
 
-         
-
         }
 
         private EmpleadosBLL RecuperarInformacion()
@@ -60,7 +58,9 @@ namespace AdministradorDeEmpleados.PL
             oEmpleado.DNI = int.Parse(txtDNI.Text);
             oEmpleado.Email = txtEmail.Text;
             oEmpleado.Password = txtPass.Text;
-            oEmpleado.Tipo = "Cliente";
+            //  oEmpleado.Tipo = "Cliente";
+            oEmpleado.Tipo = cbxTipo.Text;
+            oEmpleado.Estado = cbxEstado.Text;
             oEmpleado.setId();
             return oEmpleado;
         }
@@ -70,7 +70,9 @@ namespace AdministradorDeEmpleados.PL
             oEmpleado.Nombre = txtNombre.Text;
             oEmpleado.Email = txtEmail.Text;
             oEmpleado.Password = txtPass.Text;
-            oEmpleado.Tipo = "Cliente";
+            // oEmpleado.Tipo = "Cliente";
+            oEmpleado.Tipo = cbxTipo.Text;
+            oEmpleado.Estado = cbxEstado.Text;
             oEmpleado.Id = int.Parse(txtId.Text);
             oEmpleado.DNI = int.Parse(txtDNI.Text);
             return oEmpleado;
@@ -84,6 +86,8 @@ namespace AdministradorDeEmpleados.PL
             txtPass.Text = dgvEmpleados.Rows[indice].Cells[4].Value.ToString();
             txtId.Text = dgvEmpleados.Rows[indice].Cells[0].Value.ToString();
             txtDNI.Text = dgvEmpleados.Rows[indice].Cells[6].Value.ToString();
+            cbxTipo.Text = dgvEmpleados.Rows[indice].Cells[5].Value.ToString();
+            cbxEstado.Text = dgvEmpleados.Rows[indice].Cells[7].Value.ToString();
 
             btnAgregar.Enabled = false;
             btnBorrar.Enabled = true;
@@ -114,6 +118,8 @@ namespace AdministradorDeEmpleados.PL
             txtEmail.Text = "";
             txtId.Text = "";
             txtPass.Text = "";
+            cbxTipo.Text = "";
+            cbxEstado.Text = "";
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -124,5 +130,6 @@ namespace AdministradorDeEmpleados.PL
             btnModificar.Enabled = false;
             btnExaminar.Enabled = false;
         }
+
     }
 }

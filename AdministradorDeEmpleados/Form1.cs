@@ -43,7 +43,8 @@ namespace AdministradorDeEmpleados
         private void btnIniciarSesion_Click_1(object sender, EventArgs e)
         {
             DataSet emp;
-            EmpleadoDAL eDAL = new EmpleadoDAL(); ;
+            EmpleadoDAL eDAL = new EmpleadoDAL(); 
+           // EmpleadosBLL empBLL = new EmpleadosBLL();
             emp = eDAL.BuscarEmp(txtEmail.Text, txtPas.Text);
             if (emp == null)
             {
@@ -63,6 +64,7 @@ namespace AdministradorDeEmpleados
                  } */
 
                 MessageBox.Show("Usuario encontrado");
+                
             }
         }
     }

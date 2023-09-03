@@ -59,5 +59,25 @@ namespace AdministradorDeEmpleados.DAL
             }
             catch { return DS; }
         }
+
+       /* public SqlDataReader EjecutarReader(SqlCommand sqlComando)
+        {
+            SqlDataReader reader = null;
+
+            try
+            {
+                SqlCommand Comando = new SqlCommand();
+                Comando = sqlComando;
+                Comando.Connection= EstablecerConexion();
+                Conexion.Open();
+                reader = Comando.ExecuteReader();
+                return reader;
+
+            }
+            catch(Exception ex)
+            {
+                return reader;
+            }
+        } */
     }
 }

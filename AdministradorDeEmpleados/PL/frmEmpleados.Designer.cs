@@ -44,6 +44,10 @@
             txtId = new Label();
             txtDNI = new TextBox();
             label4 = new Label();
+            cbxTipo = new ComboBox();
+            label5 = new Label();
+            cbxEstado = new ComboBox();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)picFoto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvEmpleados).BeginInit();
             SuspendLayout();
@@ -113,7 +117,7 @@
             // 
             // btnExaminar
             // 
-            btnExaminar.Location = new Point(16, 119);
+            btnExaminar.Location = new Point(15, 114);
             btnExaminar.Margin = new Padding(2);
             btnExaminar.Name = "btnExaminar";
             btnExaminar.Size = new Size(99, 26);
@@ -123,7 +127,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(187, 119);
+            btnAgregar.Location = new Point(161, 169);
             btnAgregar.Margin = new Padding(2);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(68, 26);
@@ -134,7 +138,7 @@
             // 
             // btnModificar
             // 
-            btnModificar.Location = new Point(259, 119);
+            btnModificar.Location = new Point(233, 169);
             btnModificar.Margin = new Padding(2);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(67, 26);
@@ -145,7 +149,7 @@
             // 
             // btnBorrar
             // 
-            btnBorrar.Location = new Point(330, 119);
+            btnBorrar.Location = new Point(304, 169);
             btnBorrar.Margin = new Padding(2);
             btnBorrar.Name = "btnBorrar";
             btnBorrar.Size = new Size(66, 26);
@@ -156,7 +160,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(435, 119);
+            btnCancelar.Location = new Point(409, 169);
             btnCancelar.Margin = new Padding(2);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(99, 26);
@@ -168,7 +172,7 @@
             // dgvEmpleados
             // 
             dgvEmpleados.ColumnHeadersHeight = 34;
-            dgvEmpleados.Location = new Point(17, 155);
+            dgvEmpleados.Location = new Point(16, 226);
             dgvEmpleados.Margin = new Padding(2);
             dgvEmpleados.Name = "dgvEmpleados";
             dgvEmpleados.RowHeadersWidth = 62;
@@ -201,11 +205,51 @@
             label4.TabIndex = 14;
             label4.Text = "DNI:";
             // 
+            // cbxTipo
+            // 
+            cbxTipo.FormattingEnabled = true;
+            cbxTipo.Items.AddRange(new object[] { "Cliente", "Administrador" });
+            cbxTipo.Location = new Point(127, 132);
+            cbxTipo.Name = "cbxTipo";
+            cbxTipo.Size = new Size(191, 23);
+            cbxTipo.TabIndex = 15;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(127, 114);
+            label5.Name = "label5";
+            label5.Size = new Size(33, 15);
+            label5.TabIndex = 16;
+            label5.Text = "Tipo:";
+            // 
+            // cbxEstado
+            // 
+            cbxEstado.FormattingEnabled = true;
+            cbxEstado.Items.AddRange(new object[] { "Inactivo", "Activo" });
+            cbxEstado.Location = new Point(324, 132);
+            cbxEstado.Name = "cbxEstado";
+            cbxEstado.Size = new Size(221, 23);
+            cbxEstado.TabIndex = 17;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(324, 114);
+            label6.Name = "label6";
+            label6.Size = new Size(45, 15);
+            label6.TabIndex = 18;
+            label6.Text = "Estado:";
+            // 
             // frmEmpleados
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(709, 330);
+            ClientSize = new Size(709, 401);
+            Controls.Add(label6);
+            Controls.Add(cbxEstado);
+            Controls.Add(label5);
+            Controls.Add(cbxTipo);
             Controls.Add(label4);
             Controls.Add(txtDNI);
             Controls.Add(txtId);
@@ -224,7 +268,7 @@
             Controls.Add(label1);
             Margin = new Padding(2);
             Name = "frmEmpleados";
-            Text = "frmClientes";
+            Text = "frmUsuarios";
             ((System.ComponentModel.ISupportInitialize)picFoto).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvEmpleados).EndInit();
             ResumeLayout(false);
@@ -249,5 +293,9 @@
         private Label txtId;
         private TextBox txtDNI;
         private Label label4;
+        private ComboBox cbxTipo;
+        private Label label5;
+        private ComboBox cbxEstado;
+        private Label label6;
     }
 }
