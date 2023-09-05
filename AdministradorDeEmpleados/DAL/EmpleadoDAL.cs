@@ -54,32 +54,8 @@ namespace AdministradorDeEmpleados.DAL
             return conexion.EjecutarSentencia(sentencia);
         }
 
-        /*  public DataSet BuscarEmp(string email, string contraseña)   // ESTE ANDA PERO NO TAN BIEN
-          {
-              DataSet ds = new DataSet();
-              try
-              {
-                    SqlCommand sentencia = new SqlCommand("SELECT * FROM Empleado WHERE email = '" + email + "' AND password = '" + contraseña + "'");
-                  ds = conexion.EjecutarSentencia(sentencia);
 
-                    if (ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
-                    {
-                        ds = null;
-                    }
-                  return ds;
-               } 
-
-              catch (Exception ex)
-              {
-                  {
-                      MessageBox.Show("ERROR AL BUSCAR EMPLEADO " + ex.Message);
-                      return ds;
-                  }
-              }
-          } */
-
-
-        public DataSet BuscarEmp(string email, string contraseña)   // NO FUNCIONA, REVISAR. LA IDEA ES QUE ME TRAIGA UN OBJETO TIPO USUARIO PARA VER SI ES ADMIN O EMPLEADO
+        public DataSet BuscarEmp(string email, string contraseña)   // NO FUNCIONA, REVISAR
         {
             DataSet ds = new DataSet();
             ds = null;
