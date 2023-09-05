@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 using DataAccess;
 using System.Windows;
 //using System.Windows.Forms;
-
+using BusinessEntities;
+using System.Windows.Forms;
 
 
 namespace BusinessLogic
@@ -20,34 +21,60 @@ namespace BusinessLogic
             conexion = new Conexion();
         }
 
-        public string Agregar(UsuarioBL oEmpleado)
-        {
-            MessageBox.Show("USUARIO " + oEmpleado.Nombre + " CREADO EXITOSAMENTE");
-            return conexion.Pruebaconectar(
-                "INSERT INTO Empleado (nombre,email,password,tipo, dni, estado) " +
-                "VALUES ('" + oEmpleado.Nombre + "', '" + oEmpleado.Email + "', '" + oEmpleado.Password + "','" + oEmpleado.Tipo + "', '" + oEmpleado.DNI + "', '" + oEmpleado.Estado + "' );");
-        }
-        public int Eliminar(UsuarioBL oEmpleado)
-        {
-            MessageBox.Show("SE ELIMINA EL EMPLEADO: " + oEmpleado.Nombre);
-            conexion.Pruebaconectar(
-                "DELETE FROM Empleado WHERE id = '" + oEmpleado.Id + "'");
-            return 1;
-        }
-        public int Modificar(UsuarioBL oEmpleado)
-        {
-            string nuevoNombre = oEmpleado.Nombre;
-            string nuevoEmail = oEmpleado.Email;
-            string nuevaPassword = oEmpleado.Password;
-            string nuevoEstado = oEmpleado.Estado;
-            string nuevoTipo = oEmpleado.Tipo;
-            // int nuevodni = oEmpleado.DNI;
+        public void Agregar(int dni, string nombre, string apellido, string email, byte[] foto, string password, string tipo, string estado)
+        {            
+            UsuarioBE usuNuevo = new UsuarioBE(dni, nombre, apellido, email, foto, password);
+            UsuarioData usuData = new UsuarioData();
+            if(usuData.GuardarUsuario(usuNuevo) == "true")
+            {
+                MessageBox.Show("USUARIO {0} CREADO EXITOSAMENTE", usuNuevo.Nombre);
+            }
+            else
+            {
+                MessageBox.Show("ERROR AL GUARDAR EMPLEADO " +usuData.GuardarUsuario(usuNuevo));
+            }
+        } // OK
 
-            conexion.Pruebaconectar(
-                "Update Empleado Set nombre='"
-                + nuevoNombre +/*"',dni='" + nuevodni +*/ "',email='" + nuevoEmail + "',password='" + nuevaPassword + "', tipo= '" + nuevoTipo + "', estado= '" + nuevoEstado + "' Where id =" + oEmpleado.Id);
+        public void Eliminar(int id)
+        {
+            // ¿NECESARIO RECUPERAR EL OBJETO COMPLETO?
+            UsuarioData usuarioData = new UsuarioData();
+            if(usuarioData.EliminarDeBD(id) == 1)
+            {
+               // MessageBox.Show("USUARIO ELIMINADO CON EXITO");
+            }
+            else
+            {
+               // MessageBox.Show("ERROR AL ELIMINAR USUARIO");
+            }
+        } // OK
+
+        public int Modificar(int id, int dni, string nombre, string Apellido, string email, string password, string tipo, string estado)
+        {
+            int nuevoDNI = dni;
+            string nuevoNombre = nombre;
+            string nuevoApe = Apellido;
+            string nuevoEmail = email;
+            string nuevaPas = password;
+            string nuevoTipo = tipo;
+            string nuevoEstado = estado;
+
+            UsuarioBE usu = new UsuarioBE(nuevoDNI, nuevoNombre, nuevoApe, nuevoEmail, null, nuevaPas, nuevoTipo, nuevoEstado);
+
+            UsuarioData usuData = new UsuarioData();
+            if(usuData.Modificar(usu) == 1)
+            {
+               // MessageBox.Show("USUARIO MODIFICADO CON EXITO");
+            }
+            else
+            {
+              //  MessageBox.Show("NO SE PUDO MODIFICAR EL USUARIO");
+            }
+           
             return 1;
-        }
+        } // OK
+
+
         public DataSet MostrarEmpleados()
         {
             SqlCommand sentencia = new SqlCommand("SELECT * FROM Empleado");
