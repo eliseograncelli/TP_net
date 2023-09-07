@@ -8,12 +8,12 @@ using DataAccess;
 using System.Windows;
 //using System.Windows.Forms;
 using BusinessEntities;
-using System.Windows.Forms;
+// using System.Windows.Forms;
 
 
 namespace BusinessLogic
 {
-    class UsuarioBL
+    public class UsuarioBL
     {
         Conexion conexion;
         public UsuarioBL()
@@ -23,15 +23,15 @@ namespace BusinessLogic
 
         public void Agregar(int dni, string nombre, string apellido, string email, byte[] foto, string password, string tipo, string estado)
         {            
-            UsuarioBE usuNuevo = new UsuarioBE(dni, nombre, apellido, email, foto, password);
+            UsuarioBE usuNuevo = new UsuarioBE(dni, nombre, apellido, email, foto, password, tipo);
             UsuarioData usuData = new UsuarioData();
             if(usuData.GuardarUsuario(usuNuevo) == "true")
             {
-                MessageBox.Show("USUARIO {0} CREADO EXITOSAMENTE", usuNuevo.Nombre);
+               // MessageBox.Show("USUARIO {0} CREADO EXITOSAMENTE", usuNuevo.Nombre);
             }
             else
             {
-                MessageBox.Show("ERROR AL GUARDAR EMPLEADO " +usuData.GuardarUsuario(usuNuevo));
+               // MessageBox.Show("ERROR AL GUARDAR EMPLEADO " +usuData.GuardarUsuario(usuNuevo));
             }
         } // OK
 
@@ -75,40 +75,19 @@ namespace BusinessLogic
         } // OK
 
 
-        public DataSet MostrarEmpleados()
+        public DataSet Listar()
         {
-            SqlCommand sentencia = new SqlCommand("SELECT * FROM Empleado");
-            return conexion.EjecutarSentencia(sentencia);
-        }
+            UsuarioData usu = new UsuarioData();
+            return usu.MostrarUsuarios();
+        } // OK
 
 
-        public DataSet BuscarEmp(string email, string contraseña)   // NO FUNCIONA, REVISAR
+        public UsuarioBE Buscador(string email, string contraseña)   // OK
         {
-            DataSet ds = new DataSet();
-            ds = null;
+            UsuarioBE usuario = new UsuarioBE(email, contraseña);
+            UsuarioData usu = new UsuarioData();
 
-            try
-            {
-                SqlCommand comando = new SqlCommand("SELECT * FROM Empleado WHERE email = '" + email + "' AND password = '" + contraseña + "'");
-                ds = conexion.EjecutarSentencia(comando);
-
-
-                if (ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
-                {
-                    ds = null;
-                    return ds;
-                }
-
-                return ds;
-
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al buscar empleado: " + ex.Message);
-                return ds;
-            }
+            return usu.BuscarUsu(usuario);
         }
 
 

@@ -57,5 +57,11 @@
             this.Tipo = "Cliente";
             this.Estado = "Inactivo";
         }
+
+        public UsuarioBE(string email, string password)
+        {
+            this.Email = email;
+            this.Password = password;
+        }
     }
 }

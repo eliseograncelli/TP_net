@@ -60,5 +60,37 @@ namespace DataAccess
             }
             catch { return DS; }
         }
+
+        public SqlDataReader SentenciaAString(SqlCommand comando)
+        {
+            /*string dato;
+            SqlCommand sqlComando;*/
+            SqlDataReader reader;
+            reader = null;
+
+            try
+            {
+                SqlCommand Comando = new SqlCommand();
+                Comando = comando;
+                Comando.Connection = EstablecerConexion();
+                conexion.Open();
+                reader = Comando.ExecuteReader();
+                conexion.Close();
+                return reader;
+
+                /*conexion.Open();
+                SqlCommand sqlCommand = new SqlCommand(comando, conexion); */
+
+
+                /* SqlCommand Comando = new SqlCommand();
+                Comando = comando;
+                Comando.Connection = EstablecerConexion();
+                conexion.Open();
+                string cadena = Comando.ToString();
+                conexion.Close();
+                return cadena; */
+            }
+            catch { return reader; }
+        }
     }
 }
